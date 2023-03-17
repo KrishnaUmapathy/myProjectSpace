@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Portal Test Regression Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <listeners>
+    <listener class-name="com.portal.listerners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="BrokerPortalTestTwo(failed)" verbose="4">
+    <classes>
+      <class name="com.portal.tests.AdminPageTest">
+        <methods>
+          <include name="quickQuote"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.portal.tests.AdminPageTest -->
+    </classes>
+  </test> <!-- BrokerPortalTestTwo(failed) -->
+</suite> <!-- Failed suite [Portal Test Regression Suite] -->
